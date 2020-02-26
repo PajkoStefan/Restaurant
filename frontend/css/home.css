@@ -1,0 +1,454 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: Lato, Helvetica, sans-serif;
+}
+* p{
+    font-size:18px;
+}
+.gl-container{
+    background-color:white;
+    position: relative;
+}
+.container{
+    margin:0 auto;
+    width:80%;
+}
+.grid-del{
+    display:grid;
+}
+.container-1{
+    padding-top:10px;
+}
+.container-2{
+    padding: 60px 0;
+}
+.bg-color-grey{
+    background-color: #bfbfbf;
+}
+/* za text */
+.col-gold{
+    color: rgb(203, 177, 0);
+}
+.col-black{
+    color:black;
+}
+.new-row{
+    display:block;
+}
+.upcase{
+    text-transform: uppercase;
+}
+.font_tangerine{
+    font-weight: 700;
+    font-family: Tangerine, Helvetica, sans-serif;
+}
+/* sekade kade ima potreba od flex */
+.flex-del{
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+/* definiranje boxovi */
+.box-30{ /* popravi ga box-20 */
+    width:20%;
+}
+.box-33{
+    width:33%;
+}
+.box-50{
+    width:50%;
+}
+.box-70{
+    width:80%;
+}
+/* */
+#menu-del{
+    height:100vh;
+}
+/* menu-del slika */
+header#menu-del{
+    background-color: #4C4C4C;
+    position: fixed;
+}
+#menu-del.flex-del{
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+#menu-logo{
+    margin-top:60px;
+    height: 80px;
+}
+#menu-logo > img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.mapouter{
+    padding: 0 20px 30px;
+    display:none;
+}
+/* gl-menu */
+ul{
+    list-style-type: none;
+}
+ul.menu{
+    padding-top:40px;
+    position: relative;
+}
+ul.menu li{
+    padding:15px 0;
+    color:lightgrey;
+}
+ul.menu li a{
+    text-decoration: none;
+    color: #b2b2b2;
+    font-size:20px;
+}
+ul.menu li ul.dropdown{
+    position: absolute;
+    width:100%;
+    background-color: rgb(102, 87, 62);
+    display: none;
+    padding:20px 0;
+
+}
+ul.menu li:hover ul.dropdown{
+    display:block;
+}
+/* poz-slika1 */
+div#body-del{
+    position: absolute;
+    right:0;
+}
+/* poz-slika1 */
+
+.welcome{
+    background-color: rgba(255,255,255, .4);
+    text-align: center;
+    padding:50px 30px;
+    color:white;
+    border-radius:0 80px 0px 80px ;
+    width:35%;
+    bottom: 30px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-45%)
+}
+
+.poz-slika1{
+    height:700px;
+    background-image: url("../images/m27-s1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 70%;
+    position: relative;
+}
+
+/* */
+.blok {
+    margin:0 auto;
+    width:80%;
+    height:60px;
+    background-image: linear-gradient(to right, rgba(142, 95, 12, 0.59), rgb(105, 68, 0), rgb(66, 36, 0));
+    border:none;
+    border-radius: 20px;
+    font-size:20px;
+    font-weight: bold;
+    color: #b2b2b2;
+}
+
+/* body-del1 */
+.body-del1.flex-del{
+    flex-flow:column nowrap;
+    align-items: center;
+}
+.body-del1 .container-1.flex-del{
+    flex-flow:column nowrap;
+    align-items: center;
+
+}
+.ukras1{
+    width:200px;
+    height:200px;
+    margin-bottom:15px;
+}
+.ukras1 img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.ukras2 {
+    margin:15px 0;
+    width:100px;
+    height:50px;
+}
+.ukras2 img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+.blok-del{
+    width:80%;
+    box-shadow: 1px 2px 40px 4px ; /* neka bide animacija */
+    border:10px dotted;
+    color: #a66600;
+    margin:50px 0;
+}
+.text-del{
+    background-color: #4C4C4C;
+    padding: 20px;
+    text-align: justify;
+
+}
+.f1-slika{
+    width:250px;
+    height:150px;
+}
+.f1-slika img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+#figura-1 figcaption{
+    padding-top:15px;
+    text-align: center;
+}
+/* */
+h1.naslov{
+    text-align: center;
+    font-size:70px;
+    font-weight: 700;
+}
+h1.naslov > span{
+    font-size:40px;
+}
+.bdt_cenovnik.flex-del{
+    text-align: center;
+    width:100%;
+    padding:70px 50px;
+}
+
+.cen_box h1{
+    padding:0 20px;
+}
+
+.cb_sodr{
+    padding:20px 20px 0 20px;
+
+}
+.cb_sodr > div{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 2px solid  grey;
+    padding:15px 0;
+}
+.cb_sodr .cbs_slika{
+    border:none;
+     /* ukluci */
+    justify-content: center;
+}
+
+.bdt_cenovnik :not(:last-child){
+    padding-right: 10px;
+}
+.star_del {
+    display: flex;
+}
+.star {
+    background-color: #ffa413;
+    border-radius: 50%;
+    position: relative;
+    width:25px;
+    height:25px;
+}
+.star i{
+    position: absolute;
+    top:3px;
+    right:3px;
+    color:white;
+}
+.cen_box{
+    width:80%;
+    display:block;
+    position: relative;
+}
+.cen_box form fieldset{
+    height:450px;
+}
+div.order{
+    justify-content: center;
+    border:none;
+    display:none;
+}
+.order button.btn-order{
+    padding:20px 30px;
+    border-radius: 20px;
+    background-color: darkred;
+    color:white;
+    font-size:18px;
+    border:none;
+}
+
+.cen_box:hover div.order{
+    display:block;
+    position: absolute;
+    bottom: 5%;
+    width:100%;
+
+}
+.cen_box:hover .cbs_slika{
+    display:none;
+}
+.cen_box:hover fieldset, .cen_box:hover .cb_sodr>div{
+    border-color: red;
+}
+.cbs_slika .order{
+    height:100%;
+    width:100%;
+}
+/* */
+.bd_cetvrt .bdc_prvaslika, .bdc_drugisliki{
+    height:550px;
+}
+.bdc_prvaslika img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.bdc_drugisliki{
+    display:flex;
+}
+.bdc_drugisliki .bdc_dslika img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.box_naslov{
+    padding:30px;
+}
+.bdc_prvaslika, .bdc_drugisliki .bdc_dslika{
+    overflow: hidden;
+}
+.bd_cetvrt .bdc_prvaslika img:hover{
+
+    opacity:0.7;
+    transform:scale(1.1,1.1);
+}
+
+.bd_cetvrt .bdc_drugisliki img:hover{
+
+    opacity:0.7;
+    transform:scale(1.1,1.1);
+}
+/* */
+.btn
+{
+    margin-top:10px;
+    font-size:18px;
+    padding:15px 30px;
+    background-color: #ffa413;
+    border:none;
+    font-weight: bold;
+    color: #292929;
+}
+/* */
+.bd_cetvrt{
+    text-align: center;
+}
+.bd_cetvrt button.btn{
+    margin:20px 0;
+    padding:20px 100px;
+    border-radius:50%;
+}
+/* */
+.review p{
+    padding:10px 0;
+}
+.review.flex-del{
+    width:35%;
+}
+.hidden-before-signup{
+    margin-top:10px;
+}
+.hidden-before-signup input{
+    text-align: center;
+    margin-top:10px;
+    height:30px;
+}
+.review span input {
+    height:40px;
+}
+.review form button.btn{
+    width:100%;
+}
+/* */
+.reservation{
+    text-align: center;
+}
+.reservation button.btn{
+    border-radius:20px;
+    padding: 20px 50px;
+    margin-top:20px;
+}
+/* */
+.foot{
+    background-color: #4C4C4C;
+    text-align: center;
+    color:white;
+    padding:20px 0;
+
+}
+.foot p span.new-row:not(:last-child){
+    padding:10px;
+}
+/*after javascript*/
+
+.order-window{
+    align-items: center;
+    background-color: rgba(100, 38, 18, 0.9);
+    position: fixed;
+    z-index: 33;
+    top:0;
+    height: 100vh;
+    text-align: center;
+
+}
+.order-window h1{
+    padding-top:50px;
+    font-size:4em;
+    color: #ffe79a;
+}
+
+.closePage{
+    cursor: pointer;
+    font-size:30px;
+    position: fixed;
+    z-index: 34;
+    right:5px;
+}
+.dailyMenu{
+    margin-top:30px;
+    padding:20px;
+    background: #835a21;
+    width:50%;
+}
+div#delivery-info{
+    margin-top:35px;
+}
+div#delivery-info input{
+    height:35px;
+    margin-bottom:5px;
+}
+/*let deliveryInfo = document.createElement('div');*/
+/*deliveryInfo.setAttribute("id", "delivery-info");*/
+/*deliveryInfo.setAttribute("class", "flex-del flex-dir-column");*/
+/*let deliveryFullName = document.createElement('input');*/
+/*deliveryFullName.setAttribute("id", "delivery-fullname");*/
+/*let deliveryAddres = document.createElement('input');*/
+/*deliveryAddres.setAttribute("id", "delivery-addres");*/
+/*let deliveryPhoneNumber = document.createElement('input');*/
+/*deliveryPhoneNumber.setAttribute("id", "delivery-phone");*/

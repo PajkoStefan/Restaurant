@@ -1,0 +1,32 @@
+.body-del-contact, .body-del-gallery ,
+.body-del-menus, .body-del-delivery,
+.body-del-reservation,.body-del-registration{
+    background-color:slategrey;
+    height:100vh;
+}
+.margin-right{
+    margin-right:5px;
+}
+.margin-left{
+    margin-left:5px;
+}
+.flex-dir-column{
+    flex-direction: column;
+}
+.flex-justify-spacebetween{
+    justify-content: space-between;
+}
+.attr-cursor{
+    cursor: pointer;
+}
+.error{
+    color: #ff0115;
+    font-size:18px;
+}
+.success{
+    color: #00a500;
+    font-size:18px;
+}
+.text-align-center{
+    text-align: center;
+}

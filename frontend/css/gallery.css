@@ -1,0 +1,118 @@
+.body-del-gallery,.body-del-reservation,
+.body-del-menus,.body-del-delivery{
+    height:87vh;
+}
+.body-del-gallery #gallery.grid-del{
+    height:100%;
+    grid-template-columns: 50px repeat(8,1fr) 50px;
+    grid-template-rows: 5% 50% 27% 18%;
+    grid-gap:10px;
+}
+.main-pic{
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.main-pic img,.img img, .slide img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+.img1{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    column-gap: 10px;
+}
+
+.img2{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.img3{
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.img4{
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+/* za js */
+/* Hide the images by default */
+.slide {
+    display:none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    width: auto;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next-pok {
+    grid-column-start: 8;
+    grid-row-start: 2;
+    justify-self: end;
+    align-self: center;
+    border-radius: 3px 0 0 3px;
+}
+.prev-pok{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    align-self: center;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.5 );
+    color:red;
+}
+.main-pic-naslov{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column: 3 /9 ;
+    z-index: 5555555;
+    justify-self: center;
+    align-self: start;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding:30px;
+    margin-top:10px;
+    border-radius: 20px;
+}
+
+.slide-slika {
+    opacity: 0.6;
+}
+
+.active, .slide-slika:hover {
+    opacity: 1;
+}

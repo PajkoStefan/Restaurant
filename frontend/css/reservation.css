@@ -1,0 +1,84 @@
+.body-del-reservation{
+    background-color: slategrey;
+}
+div#page-inner {
+    padding-top: 50px;
+}
+.re div.row:nth-of-type(1){
+    text-align: center;
+}
+.row.flex-del{
+    height:100%;
+}
+.page-header{
+    padding-top:50px;
+}
+.levo{
+    padding:100px 70px 0 70px;
+}
+.desno{
+    padding:100px 70px 0 70px;
+
+}
+.ph-naslov{
+    padding-bottom:20px;
+    text-align: center;
+}
+.form-group{
+    padding-bottom:10px;
+    text-align: left;
+}
+.panel-body > form {
+    text-align: center;
+    width:100%;
+    padding:0 40px;
+}
+form > .form-group input{
+    width:60%;
+
+}
+.radio-buttons{
+    width:60%;
+    text-align: center;
+}
+.desno .d1{
+    height:100%;
+}
+.d1 .panel-primary{
+    height:100%;
+}
+.form-control {
+    margin-left:10px;
+}
+.form-group select,.panel-body input {
+    width:50%;
+}
+input.form-control, select.form-control{
+    height:30px;
+}
+.panel-body label{
+    width:100px;
+    display: inline-block;
+}
+
+input, select{
+    border:2px solid gold;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+#page-inner label.new-row{
+    padding-bottom:5px;
+}
+.btn-reservation {
+    text-align: center;
+    margin-top:50px;
+}
+.btn-reservation button.btn {
+    width:30%;
+    height:60px;
+}
+
+button.btn.circle{
+    border-radius:10px;
+}
